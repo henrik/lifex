@@ -65,11 +65,11 @@ def show_index
     <style>
       body { text-align: center; padding: 25px; }
       body, input { font-size:28px; }
-      input[type=text] { width: 90%; padding: 8px; }
+      input[type=text] { width: 90%; padding: 8px; text-align: center; }
     </style>
     <form action=/>
-      <p>Skriv en LIFE-URL på Google Images:</p>
-      <input type=text name=url placeholder="http://images.google.com/hosted/life/1f918060ba87aee3.html">
+      <p>Paste an item page URL from the LIFE archive on Google Images:</p>
+      <input type=text name=url placeholder="Like: http://images.google.com/hosted/life/1f918060ba87aee3.html">
     </form>
   HTML
 end
