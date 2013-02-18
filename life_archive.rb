@@ -49,12 +49,17 @@ def show_images(url)
     %{<a href="#{image.url}"><img src="#{image.medium_image}"></a>}
   }.join(" ")
 
+  default_width = 200
+
   <<-HTML
     <title>Life Archive</title>
     <style>
-      img { max-width: 200px; }
+      img { max-width: #{default_width}px; }
     </style>
-    <h1>#{images.length} images</h1>
+    <h1>
+      #{images.length} images
+      <input type="range" min="50" max="600" step="10" value="#{default_width}" onchange="var mw = this.value; Array.prototype.slice.apply(document.images).forEach(function(i) { i.style.maxWidth = mw })">
+    </h1>
     #{html_images}
   HTML
 end
