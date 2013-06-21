@@ -47,11 +47,20 @@ def show_images(url)
   url = "http://#{url}" unless url.include?("://")
 
   images = Extractor.new.get(url)
+  count = images.length
+
   html_images = images.map { |image|
     %{<a href="#{image.url}"><img src="#{image.medium_image}"></a>}
   }.join(" ")
 
-  default_width = 200
+  default_width =
+    if count < 10
+      600
+    elsif count < 20
+      400
+    else
+      300
+    end
 
   <<-HTML
     <title>LIFE Archive image extractor</title>
@@ -60,7 +69,7 @@ def show_images(url)
     </style>
     <h1><a href="/">LIFE Archive image extractor</a></h1>
     <h2>
-      #{images.length} images in this set
+      #{count} images in this set
       <input type="range" min="50" max="600" step="10" value="#{default_width}" onchange="var mw = this.value; Array.prototype.slice.apply(document.images).forEach(function(i) { i.style.maxWidth = mw })">
     </h2>
     #{html_images}
