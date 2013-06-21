@@ -60,7 +60,7 @@ def show_images(url)
     </style>
     <h1><a href="/">LIFE Archive image extractor</a></h1>
     <h2>
-      #{images.length} images
+      #{images.length} images in this set
       <input type="range" min="50" max="600" step="10" value="#{default_width}" onchange="var mw = this.value; Array.prototype.slice.apply(document.images).forEach(function(i) { i.style.maxWidth = mw })">
     </h2>
     #{html_images}
