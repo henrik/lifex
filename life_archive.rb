@@ -74,7 +74,8 @@ def show_index
     </style>
     <form action=/>
       <p>Paste an item page URL from the LIFE archive on Google Images:</p>
-      <input type=text name=url placeholder="Like: http://images.google.com/hosted/life/1f918060ba87aee3.html">
+      <p><input type=text name=url placeholder="Like: http://images.google.com/hosted/life/37c45397968a844b.html"></p>
+      <p><a href="/?url=http://images.google.com/hosted/life/37c45397968a844b.html">See an example</a></p>
     </form>
     <footer>
       <p>By <a href="http://henrik.nyh.se">Henrik</a> for <a href="http://johannaost.com">Johanna</a>.
