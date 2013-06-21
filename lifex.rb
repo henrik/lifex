@@ -80,6 +80,7 @@ def show_index
       <p><input type=text name=url placeholder="Like: http://images.google.com/hosted/life/37c45397968a844b.html"></p>
       <p><button type=submit>Submit</button></p>
       <p><a href="/?url=http://images.google.com/hosted/life/37c45397968a844b.html">See an example.</a></p>
+      <p><a href="javascript:location.href='http://#{request.host_with_port}/?url='+location.href">Bookmarklet.</a></p>
     </form>
     <footer>
       <p>
