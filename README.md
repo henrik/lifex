@@ -1,6 +1,8 @@
-# Life Archive image extractor
+# LIFE Archive image extractor
 
-Sinatra on Heroku:
+The LIFE Archives on Google Images (e.g. [this](http://images.google.com/hosted/life/753c7f22c81e4750.html)) have a poor UI. You can't list all the images of a set, but have to page through them and see where it ends.
+
+This tiny Sinatra web app lets you paste a URL from the LIFE Archives, and it will list all the images in that set:
 
 <http://lifex.herokuapp.com/>
 
