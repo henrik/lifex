@@ -66,7 +66,7 @@ end
 
 def show_index
   <<-HTML
-    <title>Life Archive</title>
+    <title>LIFE Archive image extractor</title>
     <style>
       body { text-align: center; padding: 25px; }
       body, input { font-size:28px; }
@@ -76,5 +76,8 @@ def show_index
       <p>Paste an item page URL from the LIFE archive on Google Images:</p>
       <input type=text name=url placeholder="Like: http://images.google.com/hosted/life/1f918060ba87aee3.html">
     </form>
+    <footer>
+      <p>By <a href="http://henrik.nyh.se">Henrik</a> for <a href="http://johannaost.com">Johanna</a>.
+    </footer>
   HTML
 end
