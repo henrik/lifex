@@ -44,6 +44,8 @@ get "/" do
 end
 
 def show_images(url)
+  url = "http://#{url}" unless url.include?("://")
+
   images = Extractor.new.get(url)
   html_images = images.map { |image|
     %{<a href="#{image.url}"><img src="#{image.medium_image}"></a>}
