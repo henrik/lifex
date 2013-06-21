@@ -69,13 +69,13 @@ def show_index
     <title>LIFE Archive image extractor</title>
     <style>
       body { text-align: center; padding: 25px; }
-      body, input { font-size: 25px; }
+      body, input, button { font-size: 25px; }
       input[type=text] { width: 90%; padding: 8px; text-align: center; }
     </style>
     <form action=/>
       <p>Paste an item page URL from the LIFE archive on Google Images and submit to see all images in that set.</p>
       <p><input type=text name=url placeholder="Like: http://images.google.com/hosted/life/37c45397968a844b.html"></p>
-      <p><input type=submit></p>
+      <p><button type=submit>Submit</button></p>
       <p><a href="/?url=http://images.google.com/hosted/life/37c45397968a844b.html">See an example.</a></p>
     </form>
     <footer>
