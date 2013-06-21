@@ -1,2 +1,2 @@
-require "./life_archive"
+require "./lifex"
 run Sinatra::Application
