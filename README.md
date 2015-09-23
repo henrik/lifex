@@ -4,7 +4,7 @@ The LIFE Archives on Google Images (e.g. [this](http://images.google.com/hosted/
 
 This tiny Sinatra web app lets you paste a URL from the LIFE Archives, and it will list all the images in that set:
 
-<http://lifex.herokuapp.com/>
+<http://lifex.nyh.name/>
 
 ## License
 
